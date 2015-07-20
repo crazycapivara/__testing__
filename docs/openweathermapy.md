@@ -32,8 +32,8 @@ def get_current_for_group(city_ids, **params)
 ```
 Get current weather data for multiple cities.
 
-* ``city_ids (tuple)`` ___ list of city ids,
-* ``**params`` ___ units, lang, ...
+* ``city_ids (tuple) - ``  list of city ids
+* ``**params`` - units, lang, ...
 ---
 #### find_city
 ```Python
