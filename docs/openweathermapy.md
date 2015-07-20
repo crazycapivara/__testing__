@@ -25,7 +25,7 @@ Get current weather data for city.
 # optional: skip city argument and get data by zip code
 >>> data = get_current(zip="34128,DE") 
 ```
----
+***
 #### get_current_for_group
 ```Python  
 def get_current_for_group(city_ids, **params)
@@ -33,8 +33,8 @@ def get_current_for_group(city_ids, **params)
 Get current weather data for multiple cities.
 
 * ``city_ids (tuple):``  list of city ids
-* ``**params:`` units, lang,
----
+* ``**params:`` units, lang
+***
 #### find_city
 ```Python
 def find_city(city, **params)
