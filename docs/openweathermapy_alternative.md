@@ -12,7 +12,8 @@ def get_current(city=None, **params)
 Get current weather data for city.
 
 Args:
-   city (str, int or tuple): name, id or geographic coordinates (latidude, longitude)
+   city (str, int or tuple): name, id
+      or geographic coordinates (latidude, longitude)
    **params: units, lang[, zip, ...]
 """  
 ```
