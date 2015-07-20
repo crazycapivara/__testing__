@@ -23,23 +23,19 @@ def get_current_for_group(city_ids, **params)
 ```
 Get current weather data for multiple cities.
 
+``city_ids (tuple)`` _ list of city ids,
 
-**Parameters*
-
-city_ids (tuple):
-   list of city ids,
-**params:
-   units, lang
-```
+``**params`` _ units, lang, ...
 
 #### find_city
 ```Python
 def find_city(city, **params)
-   """
-   Search for ``city`` and return current weather data for match(es).
-   
-   Examples:
-      >>> data = find_city("New York")
-      >>> data = find_city("Malaga,ES")
-   """
+```
+Search for city (name) and return current weather data for match(es).
+
+**Examples**   
+```Python   
+>>> data = find_city("New York")
+>>> data = find_city("Malaga,ES")
+
 ```
