@@ -15,6 +15,9 @@ Args:
    city (str, int or tuple): name, id
       or geographic coordinates (latidude, longitude)
    **params: units, lang[, zip, ...]
+   
+Return:
+   openweathermpay.utils.NestedDict
 """  
 ```
 
@@ -47,6 +50,9 @@ Get current weather data for multiple cities.
 Args:
    city_ids (tuple): list of city ids,
    **params: units, lang
+   
+Return:
+   openweathermapy.core.DataBlock
 ```
 
 **Examples**
