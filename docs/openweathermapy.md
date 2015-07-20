@@ -4,12 +4,11 @@
 ```Python
 def get_current(city=None, **params)
 ```
-
+Get current weather data for city.
 ```
 city (str, int or tuple)
 ```
 name, id or geographic coordinates
-
 ```
 **params
 ```
