@@ -29,3 +29,15 @@ city_ids (tuple):
    list of city ids,
 **params:
    units, lang
+```
+
+### openweathermapy.core.find_city
+```Python
+def find_city(city, **params):
+  """Search for ``city`` and return current weather data for match(es).
+	
+	Examples:
+	   >>> data = find_city("New York")
+	   >>> data = find_city("Malaga,ES")
+	"""
+```
