@@ -7,13 +7,30 @@ def get_current(city=None, **params)
 ```
 Get current weather data for city.
 
-**Parameters*
-
-city (str, int or tuple):
+``city (str, int or tuple)``
   name, id or geographic coordinates
   
-**params:
-  units, lang ..., see OWM API for detaildef get_current_for_group(city_ids, **params)
+``**params``
+  units, lang[, zip, q ...], see OWM API for details
+
+**Examples**
+```Python
+# get data by city name and country code
+>>> data = get_current("Kassel,DE")
+	
+# get data by city id and set language to german (de)
+>>> data = get_current(2892518, lang="DE")
+	
+# get data by latitude and longitude and return temperatures in Celcius
+>>> location = (51.32, 9.5)
+>>> data = get_current(location, units="metric")
+	
+# optional: skip city argument and get data by zip code
+>>> data = get_current(zip="34128,DE") 
+```
+#### get_current_for_group
+```Python  
+def get_current_for_group(city_ids, **params)
 ```
 Get current weather data for multiple cities.
 
@@ -31,5 +48,4 @@ Search for city (name) and return current weather data for match(es).
 ```Python   
 >>> data = find_city("New York")
 >>> data = find_city("Malaga,ES")
-
 ```
