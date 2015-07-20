@@ -5,10 +5,11 @@
 ```Python
 def get_current(city=None, **params)
 ```
-**Description (docstring)**
+
+**Description**
 ```
 Get current weather data for city.
-	
+	
 Args:
    city (str, int or tuple): name, id
       or geographic coordinates (latidude, longitude)
@@ -36,13 +37,21 @@ Args:
 ```Python
 def get_current_for_group(city_ids=None, **params)
 ```
-**Description (docstring)**
+
+**Description**
 ```
 Get current weather data for multiple cities.
 	
 Args:
    city_ids (tuple): list of city ids,
    **params: units, lang
+```
+
+**Examples**
+```Python
+# get data for 'Malaga,ES', 'Kassel,DE', 'New York,US'
+>>> city_ids = (2892518, 2514256, 5128581)
+>>> data = get_current_for_group(city_ids, units="metric")
 ```
 
 ---
