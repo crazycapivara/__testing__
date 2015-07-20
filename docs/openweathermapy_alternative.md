@@ -7,7 +7,7 @@ def get_current(city=None, **params)
 ```
 
 **Description**
-```
+```bash
 Get current weather data for city.
 
 Args:
