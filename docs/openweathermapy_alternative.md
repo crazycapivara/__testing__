@@ -32,6 +32,7 @@ Args:
 ```
 
 ---
+### get_current_for_group
 ```Python
 def get_current_for_group(city_ids=None, **params)
 ```
