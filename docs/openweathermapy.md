@@ -1,8 +1,7 @@
 # Getting started
 # Functions
+#### openweathermapy.core.get_current
 ```Python
-openweathermapy.core.get_current
-
 def get_current(city=None, **params)
 ```
 Get current weather data for city.
