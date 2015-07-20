@@ -7,6 +7,8 @@ def get_current(city=None, **params)
 ```
 Get current weather data for city.
 
+**Parameters**
+
 * ``city (str, int or tuple):`` name, id or geographic coordinates
 * ``**params:`` units, lang[, zip, q ...], see OWM API for details
 
@@ -32,6 +34,8 @@ Get current weather data for city.
 def get_current_for_group(city_ids, **params)
 ```
 Get current weather data for multiple cities.
+
+**Parameters**
 
 * ``city_ids (tuple):``  list of city ids
 * ``**params:`` units, lang
