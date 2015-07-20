@@ -15,7 +15,7 @@ Args:
       or geographic coordinates (latidude, longitude)
    **params: units, lang[, zip, ...]
    
-Return:
+Returns:
    openweathermpay.utils.NestedDict
 """  
 ```
@@ -50,7 +50,7 @@ Args:
    city_ids (tuple): list of city ids,
    **params: units, lang
    
-Return:
+Returns:
    openweathermapy.core.DataBlock
 ```
 
