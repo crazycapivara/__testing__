@@ -8,12 +8,12 @@ def get_current(city=None, **params)
 
 **Description**
 ```Python
-# Get current weather data for city.
+"""Get current weather data for city."""
 
-# Args:
-#   city (str, int or tuple): name, id
-#      or geographic coordinates (latidude, longitude)
-#  **params: units, lang[, zip, ...]
+Args:
+   city (str, int or tuple): name, id
+      or geographic coordinates (latidude, longitude)
+  **params: units, lang[, zip, ...]
 ```
 
 **Examples**
