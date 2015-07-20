@@ -31,13 +31,14 @@ city_ids (tuple):
    units, lang
 ```
 
-### openweathermapy.core.find_city
+#### find_city
 ```Python
-def find_city(city, **params):
-  """Search for ``city`` and return current weather data for match(es).
-	
-	Examples:
-	   >>> data = find_city("New York")
-	   >>> data = find_city("Malaga,ES")
-	"""
+def find_city(city, **params)
+   """
+   Search for ``city`` and return current weather data for match(es).
+   
+   Examples:
+      >>> data = find_city("New York")
+      >>> data = find_city("Malaga,ES")
+   """
 ```
