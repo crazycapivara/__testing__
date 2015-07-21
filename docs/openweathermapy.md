@@ -12,6 +12,10 @@ Get current weather data for city.
 * ``city (str, int or tuple):`` name, id or geographic coordinates
 * ``**params:`` units, lang[, zip, q ...], see OWM API for details
 
+**Returns**
+
+* ``openweathermapy.utils.NestedDict``
+
 **Examples**
 ```Python
 # get data by city name and country code
@@ -47,8 +51,34 @@ def find_city(city, **params)
 ```
 Search for city (name) and return current weather data for match(es).
 
+**Parameters**
+
+* ``city:`` name or part of name
+* ``params:`` see OWM API
+
+**Returns**
+
+* ``openweathermapy.core.DataBlock``
+
 **Examples**   
 ```Python   
 >>> data = find_city("New York")
 >>> data = find_city("Malaga,ES")
 ```
+
+***
+#### ``core.find_cities_by_geo_coord``
+```Python
+def find_cities_by_geo_coord(geo_coord=None, count=10, **params)
+```
+Get current weather data for cities around given geopgraphic coordinates.
+
+**Args**
+
+* ``geo_coord (tuple):`` geographic coordinates (latidude, longitude)
+* ``count (int):`` number of cities to be returned, defaults to 10
+* ``**params:`` units, lang, refer to OWM API for all supported parameters
+* 
+
+**Returns**
+* ``openweathermapy.core.DataBlock``
