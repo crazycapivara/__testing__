@@ -44,8 +44,12 @@ Get current weather data for multiple cities.
 * ``city_ids (tuple):``  list of city ids
 * ``**params:`` units, lang
 
+**Returns**
+
+* ``openweathermapy.core.DataBlock``
+
 ***
-#### find_city
+#### ``find_city``
 ```Python
 def find_city(city, **params)
 ```
@@ -78,7 +82,6 @@ Get current weather data for cities around given geopgraphic coordinates.
 * ``geo_coord (tuple):`` geographic coordinates (latidude, longitude)
 * ``count (int):`` number of cities to be returned, defaults to 10
 * ``**params:`` units, lang, refer to OWM API for all supported parameters
-* 
 
 **Returns**
 * ``openweathermapy.core.DataBlock``
