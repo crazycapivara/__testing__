@@ -8,7 +8,7 @@ def get_current(city=None, **params)
 
 **Description**
 ```Python
-"""Get current weather data for city.
+Get current weather data for city.
 
 Args:
    city (str, int or tuple): name, id
@@ -17,7 +17,6 @@ Args:
    
 Returns:
    openweathermpay.utils.NestedDict
-"""  
 ```
 
 **Examples**
