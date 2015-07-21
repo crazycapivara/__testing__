@@ -58,7 +58,7 @@ Search for city (name) and return current weather data for match(es).
 **Parameters**
 
 * ``city:`` name or part of name
-* ``params:`` see OWM API
+* ``**params:`` see OWM API
 
 **Returns**
 
